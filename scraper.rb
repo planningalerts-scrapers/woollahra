@@ -6,7 +6,7 @@ require 'mechanize'
 # Doesn't seem to work without that nodeNum. I wonder what it is.
 url = "https://eservices.woollahra.nsw.gov.au/eservice/advertisedDAs.do?&orderBy=suburb&nodeNum=5265"
 # We can't give a link directly to an application. Bummer. So, giving link to the search page
-info_url = "https://ecouncil.woollahra.nsw.gov.au/eservice/daEnquiryInit.do?nodeNum=5270"
+info_url = "https://eservices.woollahra.nsw.gov.au/eservice/daEnquiryInit.do?nodeNum=5270"
 comment_url = "http://www.woollahra.nsw.gov.au/building_and_development/objections_and_comments/object_or_comment_on_a_da"
 
 agent = Mechanize.new
