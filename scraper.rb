@@ -38,11 +38,7 @@ page.at('#fullcontent .bodypanel').children.each do |block|
       raise "Unexpected form for text: #{on_notice_text}"
     end
 
-    if (ScraperWiki.select("* from data where `council_reference`='#{record['council_reference']}'").empty? rescue true)
-      ScraperWiki.save_sqlite(['council_reference'], record)
-    else
-      puts "Skipping already saved record " + record['council_reference']
-    end
+    ScraperWiki.save_sqlite(['council_reference'], record)
 
   else
     raise "Unexpected type: #{block.name}"
