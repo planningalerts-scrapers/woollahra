@@ -7,6 +7,14 @@ GIT
       httpclient
       sqlite_magic
 
+GIT
+  remote: https://github.com/planningalerts-scrapers/civica_scraper.git
+  revision: 87e895943af9da5ca5c9bc96adcbc1b768ca4e5a
+  specs:
+    civica_scraper (0.1.0)
+      mechanize
+      scraperwiki
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -60,7 +68,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  mechanize
+  civica_scraper!
   scraperwiki!
   timecop
   vcr
